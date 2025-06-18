@@ -1,0 +1,260 @@
+:root {
+  --primary-color: #1a237e;
+  --secondary-color: #303f9f;
+  --accent-color: #536dfe;
+  --light-color: #ffffff;
+  --dark-color: #0d0d0d;
+  --correct-color: #4caf50;
+  --incorrect-color: #f44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.quiz-home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.quiz-home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--light-color);
+}
+
+.quiz-home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--light-color);
+}
+
+.quiz-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.quiz-card {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.quiz-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-card p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-section {
+  margin-bottom: 2rem;
+}
+
+.question-count {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.answer-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: var(--accent-color);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.correct {
+  background-color: var(--correct-color);
+}
+
+.incorrect {
+  background-color: var(--incorrect-color);
+}
+
+.correct-marker {
+  color: var(--light-color);
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.incorrect-marker {
+  color: var(--light-color);
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.explanation {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.explanation p {
+  margin-bottom: 1rem;
+}
+
+.next-button {
+  background-color: var(--accent-color);
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.score-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.score-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.score-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button-group button {
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .quiz-home h1 {
+    font-size: 2rem;
+  }
+
+  .quiz-home p {
+    font-size: 1rem;
+  }
+
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-card {
+    padding: 1.5rem;
+  }
+
+  .quiz-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-container {
+    padding: 1rem;
+  }
+
+  .question-text {
+    font-size: 1.2rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .quiz-home {
+    padding: 1rem;
+  }
+
+  .quiz-home h1 {
+    font-size: 1.8rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+
+  button {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
