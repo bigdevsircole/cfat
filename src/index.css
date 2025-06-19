@@ -17,6 +17,12 @@
 
 body {
   background-color: var(--primary-color);
+  background-image: linear-gradient(rgba(111, 116, 170, 0.85), rgba(48, 63, 159, 0.85)),
+    url('../public/background-image.jpeg');;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
   color: var(--light-color);
   min-height: 100vh;
   line-height: 1.6;
@@ -26,6 +32,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
 }
 
 .quiz-home {

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 export default function QuizHome() {
   return (
     <div className="quiz-home">
-      <h1>Welcome to Web Development Quiz</h1>
-      <p>Test your knowledge of HTML, CSS, and JavaScript</p>
+      <h1>Welcome to Caleb Frontend Aptitude Test (CFAT)</h1>
+      <p>The CFAT aims to test your knowledge of either HTML, CSS, and JavaScript depending on your level of expertise. You can share your final result on social media, tag me and other people you think might need to see it.</p>
       
       <div className="quiz-options">
         <Link to="/html-quiz" className="quiz-card">
