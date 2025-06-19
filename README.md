@@ -1,12 +1,84 @@
-# React + Vite
+# Caleb Frontend Aptitude Test App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A comprehensive quiz application for testing knowledge of HTML, CSS, and JavaScript. Built with Vite and React, this app provides an interactive learning experience with immediate feedback.
 
-Currently, two official plugins are available:
+Features ✨
+Three Separate Quizzes: Dedicated sections for HTML, CSS, and JavaScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+20 Questions Each: Thorough coverage of each technology
 
-## Expanding the ESLint configuration
+Instant Feedback: See correct answers with explanations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Score Tracking: Get your results at the end of each quiz
+
+Clean UI: Soothing dark blue and white colour scheme
+
+Fully Responsive: Works on all device sizes
+
+Retake Option: Test your knowledge again and improve
+
+Technologies Used 🛠️
+Vite - Next generation frontend tooling
+
+React - JavaScript library for building user interfaces
+
+React Router - For navigation between pages
+
+CSS Modules - For scoped styling
+
+Getting Started 🚀
+Prerequisites
+Node.js (v14 or higher recommended)
+
+npm or yarn
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/your-username/web-dev-quiz-app.git
+Navigate to the project directory:
+
+bash
+cd web-dev-quiz-app
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
+npm run dev
+Open your browser and visit:
+
+text
+http://localhost:3000
+
+Project Structure 📁
+text
+quiz-app/
+├── public/            # Static assets
+├── src/
+│   ├── components/    # Reusable components
+│   ├── pages/         # Quiz pages
+│   ├── App.jsx        # Main application component
+│   ├── index.css      # Global styles
+│   └── main.jsx       # Application entry point
+├── package.json       # Project dependencies
+└── vite.config.js     # Vite configuration
+
+Colour Scheme 🎨
+The app uses a soothing dark blue and white colour palette:
+
+Primary: #1a237e (Dark Blue)
+
+Secondary: #303f9f (Medium Blue)
+
+Accent: #536dfe (Light Blue)
+
+Light: #ffffff (White)
+
+Dark: #0d0d0d (Almost Black)
+
+Contributing 🤝
+Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
